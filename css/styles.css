@@ -56,7 +56,7 @@ header {
 ul {
 	width: 1000px;
 	padding: 0;
-	margin: 7px;
+	margin: 0;
 	display: flex;
 	list-style: none;
 	justify-content: space-evenly;
@@ -69,6 +69,41 @@ li {
 	font-size: 16px;
 	color: white;
 	letter-spacing: 0.8px;
+	padding: 5px;
+}
+
+li:hover {
+	cursor: pointer;
+	text-shadow: 0px 3px 5px #000000;
+}
+
+.institucional ul {
+	display: none;
+	width: 200px;
+	position: absolute;
+	background: #639CFF;
+	color: #fff;
+	margin-left: -35px;
+	margin-top: 5px;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,50%);
+}
+
+.institucional:hover ul {
+	display: block;
+}
+
+.institucional ul li {
+	color: #fff;
+	width: 100%;
+	padding: 5px 0;
+	text-shadow: none;
+	text-align: center;
+}
+
+.institucional ul li:hover {
+	cursor: pointer;
+	text-shadow: 0px 3px 5px #000000;
 }
 
 .banner {
@@ -139,6 +174,8 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
+	margin-top: 18px;
+	margin-bottom: 18px;
 	letter-spacing: 0.8px; 
 	color: black;
 	line-height: 1.1;
@@ -163,7 +200,7 @@ p {
 }
 
 .entornos figure {
-	margin: 10px;
+	margin: 1%;
 	padding: 0;
 	width: 15%;
 	height: auto;
@@ -171,6 +208,13 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	transition: .3s ease-in-out;
+}
+
+.entornos figure:hover {
+	width: 20%;
+	margin: -1%;
+	cursor: pointer;
 }
 
 .entornos img {
@@ -253,14 +297,15 @@ p {
 .saberMas {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	max-width: 700px;
+	height: 250px;
 	flex-wrap: wrap;
 }
 
 .container1 {
 	font-family: 'Cookie', cursive;
 	width: auto;
+	position: relative;
 	margin: 30px 0 0 0;
 	padding: 5px 10px;
 	display: flex;
@@ -274,16 +319,24 @@ p {
 
 .mas {
 	font-size: 80px;
+	position: absolute;
 }
 
 .contactanos {
 	font-size: 90px;
-	margin-top: -20px
+	margin-top: 120px;
+	position: absolute;
+	transition: .3s ease-in-out;
+}
+
+.container1.contactanos:hover {
+	font-size: 100px;
+	cursor: pointer;
 }
 
 footer {
 	background-color: #164599;
-	margin-top: 30px;
+	margin-top: 10px;
 	padding: 10px;
 	display: flex;
 	justify-content: center;
