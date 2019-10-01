@@ -12,6 +12,7 @@
 	<title>E.E.S.A. N°1</title>
 </head>
 <body>
+	<div class="opacidadFlotantes" id="opacidadFlotantes"></div>
 	<header>
 			<div class="cabecera">
 				<figure class="escudo">
@@ -23,15 +24,119 @@
 				<ul>
 					<li class="institucional">Institucional
 						<ul>
-							<li>Historia</li>
-							<li>Diseño Curricular</li>
+							<li type="button" id="btnHistoria" onclick="mostrar('Historia')">Historia</li>
+							<li type="button" id="btnDisCurric">Diseño Curricular</li>
 						</ul>
 					</li>
-					<li>Galeria</li>
-					<li>Contacto</li>
+					<li type="button" id="btnGaleria"  onclick="mostrar('Galeria')">Galeria</li>
+					<li type="button" id="btnContacto">Contacto</li>
 				</ul>
 			</nav>
 	</header>
+
+	<div class="flotante galeria" id="Galeria">
+		<div class="container flotantes galeria">
+			<h2>Galería</h2>
+			<button class="cierre" onclick="ocultar('Galeria')">X</button>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+			<figure>
+				<img src="images/imgmuestra.jpg" alt="">
+			</figure>
+		</div>
+	</div>
+
+	<div class="flotante historia" id="Historia">
+			<div class="container flotantes historia">
+				<h2>Galería</h2>
+				<button class="cierre" onclick="ocultar('Historia')">X</button>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<figure>
+					<img src="images/imgmuestra.jpg" alt="">
+				</figure>
+				<figure>
+					<img src="images/imgmuestra.jpg" alt="">
+				</figure>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<figure>
+					<img src="images/imgmuestra.jpg" alt="">
+				</figure>
+				<figure>
+					<img src="images/imgmuestra.jpg" alt="">
+				</figure>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
+
+			</div>
+	</div>			
+
 	<section class="banner">
 		<div class="mensajeBanner"><span>Desde 1975...</span></br>Educando por el Campo</div>
 	</section>
@@ -158,5 +263,16 @@
 	<footer>
 		<div class="autor">Diseñado con ❤️️ por @JuanRecofsky</div>
 	</footer>
+	<script>
+		function mostrar(pantalla){ 
+			document.getElementById(pantalla).style.display = "block";
+			document.getElementById('opacidadFlotantes').style.display = "block";
+		}
+
+		function ocultar(pantalla){ 
+			document.getElementById(pantalla).style.display = "none";
+			document.getElementById('opacidadFlotantes').style.display = "none";
+		}
+	</script>
 </body>
 </html>
