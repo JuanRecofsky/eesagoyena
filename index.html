@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,13 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<title>E.E.S.A. N°1</title>
 </head>
+
 <body>
+
+	<!-- Opacidad contrapuesta al Body cuando surge una pantalla flotante -->
 	<div class="opacidadFlotantes" id="opacidadFlotantes"></div>
+
+	<!-- HEADER -->
 	<header>
 			<div class="cabecera">
 				<figure class="escudo">
@@ -35,10 +41,11 @@
 			</nav>
 	</header>
 
+	<!-- PANTALLA FLOTANTE: GALERIA -->
 	<div class="flotante galeria" id="Galeria">
 		<div class="container flotantes galeria">
 			<h2>Galería</h2>
-			<button class="cierre" onclick="ocultar('Galeria')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Galeria')">X</button>
 			<figure>
 				<img src="images/imgmuestra.jpg" alt="">
 			</figure>
@@ -111,10 +118,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: HISTORIA -->
 	<div class="flotante historia" id="Historia">
 			<div class="container flotantes historia">
 				<h2>Historia</h2>
-				<button class="cierre" onclick="ocultar('Historia')">X</button>
+				<button class="cierreFlotante" onclick="ocultar('Historia')">X</button>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -136,46 +144,62 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			</div>
 	</div>
-	
+
+	<!-- PANTALLA FLOTANTE: DISEÑO CURRICULAR -->	
 	<div class="flotante disCurric" id="DisCurric">
 			<div class="container flotantes disCurric">
 				<h2>Diseño Curricular</h2>
-				<button class="cierre" onclick="ocultar('DisCurric')">X</button>
+				<button class="cierreFlotante" onclick="ocultar('DisCurric')">X</button>
 				<figure>
 					<img src="" alt="">
 				</figure>
 			</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: CONTACTO -->
 	<div class="flotante contacto" id="Contacto">
 			<div class="container flotantes contacto">
 				<h2>Contacto</h2>
-				<button class="cierre" onclick="ocultar('Contacto')">X</button>
-				<p>TIENES LOS SIGUIENTES MEDIOS DE CONTACTO POR SI DESEAS SABER MÁS</p>
+				<button class="cierreFlotante" onclick="ocultar('Contacto')">X</button>
+				<div>
+					<p>TIENES LOS SIGUIENTES MEDIOS DE CONTACTO POR SI DESEAS SABER MÁS</p>
+				</div>
 				<h2 class="titulosContacto">Teléfono</h2>
-				<p><img class="imgIconos" src="images/IconosContacto/telefono.png" alt=""> XXXX-XXXXXX</p>
+				<div>
+					<img class="imgIconos" src="images/IconosContacto/telefono.png" alt="">
+					<p> XXXX-XXXXXX</p>
+				</div>
 				<h2 class="titulosContacto">Correo Electrónico</h2>
-				<p><img class="imgIconos" src="images/IconosContacto/sobre.png" alt=""> example@example.com</p>
+				<div>
+					<img class="imgIconos" src="images/IconosContacto/sobre.png" alt="">
+					<p> example@example.com</p>
+				</div>
 				<h2 class="titulosContacto">Facebook</h2>
-				<a href="https://www.facebook.com/groups/EscuelaAgrariaGoyena" target="_blank"><p><img class="imgIconos" src="images/IconosContacto/facebook.png" alt=""> https://www.facebook.com/groups/EscuelaAgrariaGoyena</p></a>
+				<div>
+					<img class="imgIconos" src="images/IconosContacto/facebook.png" alt="">
+					<a href="https://www.facebook.com/groups/EscuelaAgrariaGoyena" target="_blank"><p> https://www.facebook.com/groups/EscuelaAgrariaGoyena</p></a>
+				</div>
 				<h2 class="titulosContacto">Ubicación</h2>
-				<p class="textoUbicacion">Avenida El Paredón 1515</br>
-						Goyena (8175)</br>
-						Distrito de Saavedra</br>
-						Provincia de Buenos Aires</br>
-						Argentina</p>
+				<div>
+					<p class="textoUbicacion">Avenida El Paredón 1515</br>
+							Goyena (8175)</br>
+							Distrito de Saavedra</br>
+							Provincia de Buenos Aires</br>
+							Argentina</p>
+				</div>
 				<figure>
 					<a href="https://www.google.com.ar/maps/place/Escuela+Secundaria+N%C2%B01/@-37.7290068,-62.618047,589m/data=!3m2!1e3!4b1!4m13!1m7!3m6!1s0x95ebef15cd7da7cb:0x51f0d7e2d4eb197e!2sGoyena,+Buenos+Aires!3b1!8m2!3d-37.7217867!4d-62.6104441!3m4!1s0x95ebef89d22f42f9:0xe3c48a8d228beea6!8m2!3d-37.7290068!4d-62.615853?hl=es-419" target="_blank">
-						<img src="images/IconosContacto/mapaEscuela.png" alt="">
+						<img class="googleMaps" src="images/IconosContacto/mapaEscuela.png" alt="">
 					</a>
 				</figure>
 			</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO APICULTURA -->
 	<div class="flotante entornosEspecifico apicultura" id="Apicultura">
 			<div class="container flotantes apicultura">
 				<h2>Entorno Apicultura</h2>
-				<button class="cierre" onclick="ocultar('Apicultura')">X</button>
+				<button class="cierreFlotante" onclick="ocultar('Apicultura')">X</button>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -198,10 +222,11 @@
 			</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO AVICULTURA -->
 	<div class="flotante entornosEspecifico avicultura" id="Avicultura">
 		<div class="container flotantes avicultura">
 			<h2>Entorno Avicultura</h2>
-			<button class="cierre" onclick="ocultar('Avicultura')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Avicultura')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -224,10 +249,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO CHACINADOS -->
 	<div class="flotante entornosEspecifico chacinados" id="Chacinados">
 		<div class="container flotantes chacinados">
 			<h2>Entorno Chacinados</h2>
-			<button class="cierre" onclick="ocultar('Chacinados')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Chacinados')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -249,11 +275,12 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 		</div>
 	</div>
-
+	
+	<!-- PANTALLA FLOTANTE: ENTORNO CUNICULTURA -->
 	<div class="flotante entornosEspecifico cunicultura" id="Cunicultura">
 		<div class="container flotantes cunicultura">
 			<h2>Entorno Cunicultura</h2>
-			<button class="cierre" onclick="ocultar('Cunicultura')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Cunicultura')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -276,10 +303,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO ENSACHETADORA -->
 	<div class="flotante entornosEspecifico ensachetadora" id="Ensachetadora">
 		<div class="container flotantes ensachetadora">
 			<h2>Entorno Ensachetadora</h2>
-			<button class="cierre" onclick="ocultar('Ensachetadora')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Ensachetadora')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -302,10 +330,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO FORRAJES -->
 	<div class="flotante entornosEspecifico forrajes" id="Forrajes">
 		<div class="container flotantes forrajes">
 			<h2>Entorno Forrajes</h2>
-			<button class="cierre" onclick="ocultar('Forrajes')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Forrajes')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -328,10 +357,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO HUERTA -->
 	<div class="flotante entornosEspecifico huerta" id="Huerta">
 		<div class="container flotantes huerta">
 			<h2>Entorno Huerta</h2>
-			<button class="cierre" onclick="ocultar('Huerta')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Huerta')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -354,10 +384,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO METEOROLOGIA -->
 	<div class="flotante entornosEspecifico meteorologia" id="Meteorologia">
 		<div class="container flotantes meteorologia">
 			<h2>Entorno Meteorologia</h2>
-			<button class="cierre" onclick="ocultar('Meteorologia')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Meteorologia')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -380,10 +411,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO PORCINOS -->
 	<div class="flotante entornosEspecifico porcinos" id="Porcinos">
 		<div class="container flotantes porcinos">
 			<h2>Entorno Porcinos</h2>
-			<button class="cierre" onclick="ocultar('Porcinos')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Porcinos')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -406,10 +438,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO QUESERIA -->
 	<div class="flotante entornosEspecifico queseria" id="Queseria">
 		<div class="container flotantes queseria">
 			<h2>Entorno Queseria</h2>
-			<button class="cierre" onclick="ocultar('Queseria')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Queseria')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -432,10 +465,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO TALLER -->
 	<div class="flotante entornosEspecifico taller" id="Taller">
 		<div class="container flotantes taller">
 			<h2>Entorno Taller</h2>
-			<button class="cierre" onclick="ocultar('Taller')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Taller')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -458,10 +492,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO TAMBO -->
 	<div class="flotante entornosEspecifico tambo" id="Tambo">
 		<div class="container flotantes tambo">
 			<h2>Entorno Tambo</h2>
-			<button class="cierre" onclick="ocultar('Tambo')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Tambo')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -484,10 +519,11 @@
 		</div>
 	</div>
 
+	<!-- PANTALLA FLOTANTE: ENTORNO VIVERO -->
 	<div class="flotante entornosEspecifico vivero" id="Vivero">
 		<div class="container flotantes vivero">
 			<h2>Entorno Vivero</h2>
-			<button class="cierre" onclick="ocultar('Vivero')">X</button>
+			<button class="cierreFlotante" onclick="ocultar('Vivero')">X</button>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ex quae sapiente a laboriosam velit quos, ipsam laudantium inventore voluptatum praesentium earum odit beatae numquam dicta, sunt non temporibus cupiditate eveniet asperiores quod. Eius, rerum unde. Odio a minima ratione expedita perspiciatis nesciunt cupiditate commodi reiciendis. Doloribus dolorum dolore, nostrum sunt voluptates veniam! Minima alias reprehenderit ad, quibusdam error corrupti vel maiores in praesentium odit hic placeat voluptatem vero temporibus, unde pariatur labore doloribus consectetur autem incidunt amet ut fugiat accusamus quidem. Architecto dolor voluptatibus suscipit omnis excepturi nulla, at delectus maxime aliquam odit. Ratione soluta doloribus similique inventore rerum, accusamus deserunt, aperiam quisquam vitae esse voluptatum voluptate totam omnis. Quaerat praesentium iste suscipit qui accusantium repellat rerum, eveniet similique molestiae explicabo doloribus harum laborum itaque odit quia earum laboriosam excepturi velit. Veniam, obcaecati modi? Ipsum iusto harum libero iste mollitia modi expedita ab sint nobis eos ducimus, nostrum ullam?</p>
@@ -510,10 +546,12 @@
 		</div>
 	</div>
 
-
+	<!-- BANNER PRINCIPAL -->
 	<section class="banner">
 		<div class="mensajeBanner"><span>Desde 1975...</span></br>Educando por el Campo</div>
 	</section>
+
+	<!-- SECCION: NOSOTROS -->
 	<section class="seccion">
 		<div class="container">
 			<h2>Nosotros</h2>
@@ -521,6 +559,7 @@
 		</div>
 	</section>
 
+	<!-- SECCION: ENTORNOS FORMATIVOS -->
 	<section class="seccion">
 		<div class="container">
 			<h2>Entornos Formativos</h2>
@@ -580,6 +619,8 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- SECCION: RESIDENCIA -->
 	<section class="seccion">
 		<div class="container">
 			<h2>Residencia Estudiantil</h2>
@@ -597,6 +638,8 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- SECCION: ACTIVIDADES -->
 	<section class="seccion">
 		<div class="container">
 			<h2>Actividades Anuales</h2>
@@ -629,15 +672,21 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- SECCION: SABER MAS -->
 	<section class="seccionSaberMas">
 		<div class="saberMas">
 			<div class="container1 mas">¿Quieres saber más?</div>
 			<div class="container1 contactanos"  type="button" id="btnContacto" onclick="mostrar('Contacto')"><a href="#btnContacto">¡Contáctanos!</a></div>
 		</div>
 	</section>
+
+	<!-- FOOTER -->
 	<footer>
 		<div class="autor">Diseñado con ❤️️ por @JuanRecofsky</div>
 	</footer>
+
+	<!-- JAVASCRIPT -->
 	<script>
 		function mostrar(pantalla){ 
 			document.getElementById(pantalla).style.display = "block";
@@ -649,5 +698,6 @@
 			document.getElementById('opacidadFlotantes').style.display = "none";
 		}
 	</script>
+
 </body>
 </html>

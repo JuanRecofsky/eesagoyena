@@ -26,7 +26,6 @@ header {
 	height: 80px;
 	width: auto;
 	margin: 0;
-	/* margin-left: 15%; */
 }
 .imgEscudo {
 	width: inherit;
@@ -56,11 +55,11 @@ header {
 
 ul {
 	width: 1000px;
-	padding: 0;
+	padding: 0 20%;
 	margin: 0;
 	display: flex;
 	list-style: none;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 li {
@@ -70,7 +69,8 @@ li {
 	font-size: 16px;
 	color: white;
 	letter-spacing: 0.8px;
-	padding: 5px;
+	padding: 5px 0;
+	width: auto;
 }
 
 li:hover {
@@ -78,26 +78,32 @@ li:hover {
 	text-shadow: 0px 3px 5px #000000;
 }
 
+.institucional {
+	position: relative;
+}
+
 .institucional ul {
 	display: none;
-	width: 200px;
+	flex-direction: column;
+	width: auto;
 	position: absolute;
+	left: -50%;
 	background: #639CFF;
 	color: #fff;
-	margin-left: -35px;
 	margin-top: 5px;
 	border-radius: 0 0 5px 5px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,50%);
 }
 
 .institucional:hover ul {
-	display: block;
+	display: flex;
 }
 
 .institucional ul li {
 	color: #fff;
-	width: 100%;
-	padding: 5px 0;
+	width: 200px;
+	margin: 5px 0;
+	padding: 0;
 	text-shadow: none;
 	text-align: center;
 }
@@ -121,10 +127,10 @@ li:hover {
 	position: absolute;
 	z-index: 5;
 	left: 10%;
-	right: 9%;
+	right: 10%;
 }
 
-.cierre {
+.cierreFlotante {
 	position: absolute;
 	top: 50px;
 	right: 20px;
@@ -149,7 +155,6 @@ li:hover {
 	margin: 20px 36%;
 }
 
-
 .container.galeria figure {
 	margin: 0 20px 20px 20px;
 	padding: 0;
@@ -173,7 +178,7 @@ li:hover {
 .flotante.historia figure {
 	margin: 20px;
 	padding: 0;
-	width: 30%;
+	width: 40%;
 	height: auto;
 	display: flex;
 	justify-content: center;
@@ -210,19 +215,33 @@ li:hover {
 	display: none;
 }
 
-.flotante.contacto p {
+.flotantes.contacto div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flotante.contacto .imgIconos {
+	width: 20px;
+	height: 20px;
+	filter: none;
+}
+
+.flotantes.contacto p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	margin: 5px;
+	text-align: center;
 }
 
-.flotante.contacto .titulosContacto {
-	margin: 20px 39%;
+.flotantes.contacto .titulosContacto {
+	margin: 20px auto;
 	margin-bottom: 10px;
 }
 
-.flotante.contacto figure {
+.flotantes.contacto figure {
 	margin: 20px;
 	padding: 0;
 	width: 80%;
@@ -232,22 +251,10 @@ li:hover {
 	align-items: center;
 }
 
-.flotante.contacto img {
+.flotantes.contacto .googleMaps {
 	width: 100%;
 	filter: drop-shadow(0px 2px 5px rgba(0,0,0,50%));
 	border-radius: 10px
-}
-
-.flotante.contacto .imgIconos {
-	width: 15px;
-	height: auto;
-	filter: none;
-	border-radius: 0;
-}
-
-.flotante.contacto .textoUbicacion {
-	text-align: center;
-	margin: 5px 39%;
 }
 
 .flotante.entornosEspecifico {
@@ -294,7 +301,7 @@ li:hover {
 }
 
 .mensajeBanner span {
-	font-size: 80px;
+	font-size: 80%;
 }
 
 .seccion {
@@ -308,7 +315,7 @@ li:hover {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1024px;
 	margin: 30px 0 0 0;
 	padding: 0;
 	display: flex;
@@ -350,7 +357,7 @@ h3 {
 
 p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: black;
 	text-align: justify;
 	margin: 20px 50px 20px 50px;
@@ -429,7 +436,7 @@ p {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-content: center;
+	align-items: center;
 }
 
 .contenido p {
@@ -501,7 +508,7 @@ p {
 }
 
 .container1.contactanos:hover {
-	font-size: 100px;
+	font-size: 110%;
 	cursor: pointer;
 }
 
@@ -520,4 +527,132 @@ footer {
 	font-weight: bold;
 	letter-spacing: 1px;
 	color: white;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1024px){
+
+.banner {
+	height: 300px;
+}
+
+.container {
+	max-width: 768px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+
+p {
+	font-size: 14px;
+}
+
+.contenido {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contenido p {
+	width: auto;
+}
+
+.contenido figure {
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 50%;
+}
+}
+
+@media screen and (max-width:768px){
+
+.cabecera {
+	height: 80px;
+}
+
+.escudo {
+	height: 60px;
+}
+
+.nombreEscuela {
+	font-size: 20px
+}
+
+li {
+	font-size: 14px;
+}
+
+.mensajeBanner {
+	font-size: 80px;
+}
+
+.container {
+	max-width: 90vw;
+}
+
+.flotante {
+	left: 5%;
+	right: 5%;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 12px;
+}
+
+.actividades.contenido figure {
+	width: 40%;
+}
+
+.entornos figure {
+	width: 23%;
+}
+
+.residencia figure {
+	width: 35%;
+}
+
+.flotante.historia figure {
+	width: 35%;
+}
+
+.flotantes.contacto p {
+	font-size: 14px;
+}
+
+.saberMas {
+	height: 220px;
+}
+
+.mas {
+	font-size: 60px;
+}
+
+.contactanos {
+	font-size: 70px;
+	margin-top: 100px;
+}
+
+footer {
+	padding: 5px;
+}
+
+.autor {
+	font-size: 10px;
+}
+}
+
+@media screen and (max-width:480px){
+	.container {
+		max-width: 320px;
+	}
+}
+
+@media screen and (max-width:320px){
+
 }
