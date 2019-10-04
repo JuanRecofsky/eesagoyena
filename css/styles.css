@@ -85,9 +85,9 @@ li:hover {
 .institucional ul {
 	display: none;
 	flex-direction: column;
-	width: auto;
+	width: 180px;
 	position: absolute;
-	left: -50%;
+	left: -40%;
 	background: #639CFF;
 	color: #fff;
 	margin-top: 5px;
@@ -101,7 +101,7 @@ li:hover {
 
 .institucional ul li {
 	color: #fff;
-	width: 200px;
+	width: 180px;
 	margin: 5px 0;
 	padding: 0;
 	text-shadow: none;
@@ -116,7 +116,7 @@ li:hover {
 .opacidadFlotantes {
 	width: 100%;
 	height: 100%;
-	background-color: white;
+	background-color: #E4E4E4;
 	opacity: 0.8;
 	z-index: 4;
 	position: absolute;
@@ -127,7 +127,7 @@ li:hover {
 	position: absolute;
 	z-index: 5;
 	left: 10%;
-	right: 10%;
+	right: 9%;
 }
 
 .cierreFlotante {
@@ -151,14 +151,14 @@ li:hover {
 	max-width: 90vw;
 }
 
-.container.flotantes h2 {
+.container.galeria h2 {
 	margin: 20px 36%;
 }
 
 .container.galeria figure {
 	margin: 0 20px 20px 20px;
 	padding: 0;
-	width: 28%;
+	width: 26%;
 	height: auto;
 	display: flex;
 	justify-content: center;
@@ -265,7 +265,7 @@ li:hover {
 .flotante.entornosEspecifico figure {
 	margin: 20px;
 	padding: 0;
-	width: 30%;
+	width: 40%;
 	height: auto;
 	display: flex;
 	justify-content: center;
@@ -550,6 +550,11 @@ p {
 	font-size: 14px;
 }
 
+
+.flotante.historia h2 {
+	margin-bottom: 0px;
+}
+
 .contenido {
 	flex-direction: column;
 	justify-content: center;
@@ -584,6 +589,10 @@ li {
 	font-size: 14px;
 }
 
+.container.galeria figure {
+	width: 40%
+}
+
 .mensajeBanner {
 	font-size: 80px;
 }
@@ -605,8 +614,17 @@ h3 {
 	font-size: 12px;
 }
 
+
+p {
+	margin: 20px;;
+}
+
 .actividades.contenido figure {
 	width: 40%;
+}
+
+.entornos {
+	padding: 0 15px;
 }
 
 .entornos figure {
@@ -618,7 +636,7 @@ h3 {
 }
 
 .flotante.historia figure {
-	width: 35%;
+	width: 75%;
 }
 
 .flotantes.contacto p {
@@ -648,11 +666,115 @@ footer {
 }
 
 @media screen and (max-width:480px){
-	.container {
-		max-width: 320px;
+
+	.cabecera {
+		height: 60px;
 	}
-}
+	
+	.escudo {
+		height: 40px;
+	}
+	
+	.nombreEscuela {
+		font-size: 14px
+	}
 
-@media screen and (max-width:320px){
+	ul {
+		width: 100vw;
+		padding: 0;
+	}
 
+	.institucional ul {
+		width: 140px;
+		left: -10px
+	}
+	
+	.institucional:hover ul {
+		display: flex;
+	}
+	
+	.institucional ul li {
+		width: 140px;
+		font-size: 12px
+	}
+
+	.cierreFlotante {
+		top: 30px;
+	}
+
+	.flotante.historia figure {
+		width: 75%
+	}
+
+	.flotantes.contacto a .facebookIcono{
+		width: 60px;
+		height: auto;
+	}
+	
+	.flotantes.contacto .facebookLink {
+		display: none;
+	}	
+
+	.container.galeria figure {
+		width: 70%
+	}
+
+	.flotante.entornosEspecifico figure {
+		width: 75%;
+	}
+
+	.banner {
+		height: 200px;
+	}
+
+	.mensajeBanner {
+		font-size: 50px;
+	}
+
+	.container {
+		width: 90vw;
+		margin: 10px 0 0;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	.entornos figure {
+		width: 40%;
+	}
+
+	.residencia figure {
+		width: 75%;
+	}
+
+	.actividades {
+		justify-content: center;
+		padding: 0;
+	}
+
+	.actividades h2 {
+		margin-left: 0;
+	}
+
+	.actividades figure {
+		width: 75%;
+	}
+
+	.saberMas {
+		height: 150px;
+	}
+
+	.container1 {
+		margin: 20px 0 0 0;
+	}
+	
+	.mas {
+		font-size: 40px;
+	}
+	
+	.contactanos {
+		font-size: 50px;
+		margin-top: 70px;
+	}
 }
