@@ -508,7 +508,7 @@ p {
 }
 
 .container1.contactanos:hover {
-	font-size: 110%;
+	font-size: 100px;
 	cursor: pointer;
 }
 
@@ -656,6 +656,10 @@ p {
 	margin-top: 100px;
 }
 
+.container1.contactanos:hover {
+	font-size: 80px;
+}
+
 footer {
 	padding: 5px;
 }
@@ -776,5 +780,9 @@ footer {
 	.contactanos {
 		font-size: 50px;
 		margin-top: 70px;
+	}
+
+	.container1.contactanos:hover {
+		font-size: 60px;
 	}
 }
